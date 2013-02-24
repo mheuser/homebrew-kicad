@@ -14,6 +14,7 @@ class Kicad < Formula
   head "http://bazaar.launchpad.net/~kicad-testing-committers/kicad/testing/", :using => :bzr
   version 'testing-3920'
 
+  depends_on 'bazaar'
   depends_on 'cmake' => :build
   depends_on :x11
   depends_on 'Wxmac'
