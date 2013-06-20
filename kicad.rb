@@ -35,6 +35,7 @@ class Kicad < Formula
       args = std_cmake_args + %W[
         -DKICAD_MODULES=#{share}/kicad/modules
         -DKICAD_LIBRARY=#{share}/kicad/library
+        -DKICAD_TEMPLATES=#{share}/kicad/template
       ]
       system "cmake", ".", *args
       system "make install"
