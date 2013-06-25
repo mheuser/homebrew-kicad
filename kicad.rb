@@ -64,6 +64,12 @@ class Kicad < Formula
     kicad.app and friends installed to:
       #{bin}
 
+    If you get "bzr: ERROR: unknown command "patch"" error, then you should probably install bzrtools:
+
+      wget -O /tmp/bzrtools.tar.gz http://launchpad.net/bzrtools/stable/2.5/+download/bzrtools-2.5.tar.gz
+      mkdir -p ~/.bazaar/plugins/
+      tar zxf /tmp/bzrtools.tar.gz -C ~/.bazaar/plugins/
+
     To link the application to a normal Mac OS X location:
         brew linkapps
     or:
